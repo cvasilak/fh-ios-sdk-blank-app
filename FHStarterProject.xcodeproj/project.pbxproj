@@ -13,7 +13,6 @@
 		B339FAE015DA88920040E5FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B339FADE15DA88920040E5FF /* InfoPlist.strings */; };
 		B339FAE215DA88920040E5FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B339FAE115DA88920040E5FF /* main.m */; };
 		B339FAE615DA88920040E5FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B339FAE515DA88920040E5FF /* AppDelegate.m */; };
-		B339FAED15DA88D40040E5FF /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B339FAEC15DA88D40040E5FF /* FH.framework */; };
 		B339FAEF15DA88E50040E5FF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B339FAEE15DA88E50040E5FF /* MobileCoreServices.framework */; };
 		B339FAF115DA88F10040E5FF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B339FAF015DA88F10040E5FF /* CFNetwork.framework */; };
 		B339FAFE15DA89210040E5FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B339FAFD15DA89210040E5FF /* SystemConfiguration.framework */; };
@@ -35,7 +34,6 @@
 		B339FAE315DA88920040E5FF /* FHStarterProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FHStarterProject-Prefix.pch"; sourceTree = "<group>"; };
 		B339FAE415DA88920040E5FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B339FAE515DA88920040E5FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B339FAEC15DA88D40040E5FF /* FH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FH.framework; sourceTree = "<group>"; };
 		B339FAEE15DA88E50040E5FF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B339FAF015DA88F10040E5FF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B339FAFD15DA89210040E5FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -58,7 +56,6 @@
 				B339FADA15DA88920040E5FF /* CoreGraphics.framework in Frameworks */,
 				B339FAF115DA88F10040E5FF /* CFNetwork.framework in Frameworks */,
 				B339FAEF15DA88E50040E5FF /* MobileCoreServices.framework in Frameworks */,
-				B339FAED15DA88D40040E5FF /* FH.framework in Frameworks */,
 				B339FAD615DA88920040E5FF /* UIKit.framework in Frameworks */,
 				B339FAD815DA88920040E5FF /* Foundation.framework in Frameworks */,
 			);
@@ -92,7 +89,6 @@
 				B339FAFD15DA89210040E5FF /* SystemConfiguration.framework */,
 				B339FAF015DA88F10040E5FF /* CFNetwork.framework */,
 				B339FAEE15DA88E50040E5FF /* MobileCoreServices.framework */,
-				B339FAEC15DA88D40040E5FF /* FH.framework */,
 				B339FAD515DA88920040E5FF /* UIKit.framework */,
 				B339FAD715DA88920040E5FF /* Foundation.framework */,
 				B339FAD915DA88920040E5FF /* CoreGraphics.framework */,
@@ -244,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -271,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -282,15 +278,9 @@
 		B339FAEA15DA88920040E5FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FHStarterProject/FHStarterProject-Prefix.pch";
 				INFOPLIST_FILE = "FHStarterProject/FHStarterProject-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,15 +289,9 @@
 		B339FAEB15DA88920040E5FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FHStarterProject/FHStarterProject-Prefix.pch";
 				INFOPLIST_FILE = "FHStarterProject/FHStarterProject-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
