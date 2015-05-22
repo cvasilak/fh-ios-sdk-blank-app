@@ -5,7 +5,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FH/FH.h>
+#import <FH/FeedHenry.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
